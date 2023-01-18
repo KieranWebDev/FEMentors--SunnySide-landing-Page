@@ -16,12 +16,18 @@ img {
 .page-container {
   max-width: 500px;
   border: 1px solid black;
+  position: relative;
 }
 
 /* HEADER AND NAV */
 nav {
   background-color: cornflowerblue;
+  background: transparent;
   padding: 2rem 1.5rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border: 1px solid black;
 }
 
 .nav-icons-container {
@@ -49,6 +55,7 @@ nav {
 .menu ul li {
   list-style: none;
 }
+/* Menu toggle class */
 .show-menu {
   display: block;
 }
@@ -58,7 +65,12 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 538px;
+  height: 100vh;
+}
+.hero h1 {
+  padding-top: 144px;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 700px) {
@@ -88,5 +100,18 @@ nav {
     padding: 0;
     background-color: transparent;
     gap: 10px;
+  }
+
+  /*HERO  */
+  .hero {
+    background-image: url('./images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+  .hero h1 {
+    padding-top: 195px;
+    font-size: 3.5rem;
   }
 }
