@@ -35,6 +35,7 @@ img {
   border: 1px solid black;
   position: relative;
   font-family: 'Barlow', sans-serif;
+  font-size: 18px;
 }
 
 /* HEADER AND NAV */
@@ -117,9 +118,6 @@ nav {
   background-color: transparent;
   border-left: 25px solid transparent;
   border-bottom: 25px solid white;
-  /* border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid black; */
 }
 /* HERO */
 .hero {
@@ -133,6 +131,11 @@ nav {
   padding-top: 144px;
   text-align: center;
   font-size: 2.5rem;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 900;
+  letter-spacing: 6.25px;
 }
 
 @media (min-width: 700px) {
@@ -148,11 +151,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2.875rem 2.5rem;
+  }
+  .nav-icons-container img {
+    width: 170px;
+    height: 33px;
   }
   .menu {
     display: block;
     width: auto;
     margin: 0;
+    padding: 0;
   }
   .menu ul {
     display: flex;
@@ -161,9 +170,20 @@ nav {
     align-items: center;
     padding: 0;
     background-color: transparent;
-    gap: 10px;
+    gap: 3rem;
+  }
+  .menu a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    font-size: 18px;
   }
 
+  .contact-link.desktop {
+    background-color: var(--white);
+    color: var(--very-dark-desaturated-blue);
+  }
   /*HERO  */
   .hero {
     background-image: url('./images/desktop/image-header.jpg');
@@ -175,8 +195,5 @@ nav {
   .hero h1 {
     padding-top: 195px;
     font-size: 3.5rem;
-  }
-  .contact-link.desktop {
-    background-color: var(--soft-red);
   }
 }
