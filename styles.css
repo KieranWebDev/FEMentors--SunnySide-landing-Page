@@ -42,13 +42,13 @@ nav {
 }
 
 .menu {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
+
   padding: 2rem;
   display: none;
 }
@@ -58,6 +58,19 @@ nav {
 /* Menu toggle class */
 .show-menu {
   display: block;
+  margin-top: 50px;
+  background-color: aliceblue;
+}
+.show-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.show-menu ul li a {
+  font-size: 1.25rem;
+  text-decoration: none;
 }
 /* HERO */
 .hero {
