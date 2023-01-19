@@ -25,17 +25,26 @@ html {
   padding: 0;
   margin: 0;
 }
-
+/* GLOBAL STYLES */
 img {
   display: block;
+}
+body {
+  background-color: #3dbeff;
+}
+.grid-container,
+.testimonials-section {
+  background-color: white;
 }
 
 .page-container {
   /* max-width: 700px; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   position: relative;
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
 /* HEADER AND NAV */
@@ -49,7 +58,14 @@ nav {
   top: 0;
   background-color: #3dbeff;
   z-index: 5;
+  max-width: 1600px;
+  margin: 0 auto;
   /* border: 1px solid black; */
+}
+.max-width-container {
+  display: flex;
+  justify-content: center;
+  background-color: #3dbeff;
 }
 
 .nav-icons-container {
@@ -149,6 +165,10 @@ nav {
 }
 
 /* MAIN SECTION */
+/* .grid-container {
+  max-width: 1600px;
+  margin: 0 auto;
+} */
 
 /* main-section images */
 .images,
@@ -226,8 +246,8 @@ nav {
 /* TESTOMONIALS SECTION */
 
 .testimonials-section {
-  margin: 4rem auto 5.375rem auto;
-  max-width: 1110px;
+  padding: 4rem 0 5.375rem 0;
+  margin: 0 auto;
 }
 .testimonials-section h3 {
   font-family: 'Fraunces', serif;
@@ -238,6 +258,7 @@ nav {
   margin-bottom: 4rem;
   text-transform: uppercase;
   text-align: center;
+  flex-basis: 100%;
 }
 .testimonials-flex-container {
   display: flex;
@@ -245,6 +266,9 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 .testimonial {
   display: flex;
@@ -316,10 +340,6 @@ nav {
 }
 
 @media (min-width: 820px) {
-  .page-container {
-    max-width: 2000px;
-    margin: 0 auto;
-  }
   /* HEADER AND NAV */
   .hamburger-btn {
     display: none;
@@ -428,6 +448,9 @@ nav {
     max-width: 340px;
   }
   /* TESTIMONIALS SECTION */
+  .testimonials-section {
+    padding: 160px 0;
+  }
   .testimonials-flex-container {
     flex-direction: row;
     justify-content: center;
@@ -437,5 +460,6 @@ nav {
   .testimonial {
     flex-basis: 30%;
     padding: 0;
+    gap: 0 63px;
   }
 }
