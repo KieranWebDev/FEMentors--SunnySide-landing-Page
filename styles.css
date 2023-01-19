@@ -243,6 +243,37 @@ nav {
   opacity: 1;
 }
 
+/* main section text with images */
+
+.text-with-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px 1.5rem;
+  text-align: center;
+}
+.text-with-image h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.75rem;
+  color: var(--dark-desaturated-cyan);
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  margin-bottom: 27px;
+}
+.text-with-image p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.11px;
+  color: var(--dark-desaturated-cyan);
+}
+.text-with-image.orange-img h2 {
+  color: var(--dark-blue);
+}
+.text-with-image.orange-img p {
+  color: var(--dark-blue);
+}
 /* TESTOMONIALS SECTION */
 
 .testimonials-section {
@@ -255,7 +286,7 @@ nav {
   color: var(--grayish-blue);
   font-weight: 900;
   letter-spacing: 4px;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   text-transform: uppercase;
   text-align: center;
   flex-basis: 100%;
@@ -307,38 +338,34 @@ nav {
   color: var(--grayish-blue);
 }
 
-/* main section text with images */
+/* IMAGES ABOVE FOOTER */
+.milk-bottle {
+  background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+}
+.orange-on-plate {
+  background-image: url('./images/mobile/image-gallery-orange.jpg');
+}
+.cone {
+  background-image: url('./images/mobile/image-gallery-cone.jpg');
+}
+.sugar-cubes {
+  background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+}
+.img-above-footer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 188px;
+  width: 100%;
+  margin: 0 auto;
+}
+.images-above-footer-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
-.text-with-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 60px 1.5rem;
-  text-align: center;
+  margin: 0 auto;
 }
-.text-with-image h2 {
-  font-family: 'Fraunces', serif;
-  font-size: 1.75rem;
-  color: var(--dark-desaturated-cyan);
-  font-weight: 900;
-  letter-spacing: -0.2px;
-  margin-bottom: 27px;
-}
-.text-with-image p {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 27px;
-  letter-spacing: -0.11px;
-  color: var(--dark-desaturated-cyan);
-}
-.text-with-image.orange-img h2 {
-  color: var(--dark-blue);
-}
-.text-with-image.orange-img p {
-  color: var(--dark-blue);
-}
-
 @media (min-width: 820px) {
   /* HEADER AND NAV */
   .hamburger-btn {
@@ -460,6 +487,9 @@ nav {
   .testimonial {
     flex-basis: 30%;
     padding: 0;
-    gap: 0 63px;
+  }
+  .testimonials-section h3 {
+    font-size: 20px;
+    margin-bottom: 50px;
   }
 }
