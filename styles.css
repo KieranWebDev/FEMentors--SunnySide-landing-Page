@@ -426,6 +426,8 @@ footer {
   transition: all 0.2s ease-in-out;
 }
 
+/* MEDIA QUERIES */
+/* mobile */
 @media (min-width: 820px) {
   /* HEADER AND NAV */
   .hamburger-btn {
@@ -467,6 +469,11 @@ footer {
   .contact-link.desktop {
     background-color: var(--white);
     color: var(--very-dark-desaturated-blue);
+  }
+  .contact-link.desktop:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
   }
   /*HERO  */
   .hero {
