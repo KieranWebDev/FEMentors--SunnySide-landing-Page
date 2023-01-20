@@ -465,6 +465,10 @@ footer {
     display: block;
     font-size: 18px;
   }
+  .menu a:hover {
+    color: black;
+    transition: all 0.2s ease-in-out;
+  }
 
   .contact-link.desktop {
     background-color: var(--white);
