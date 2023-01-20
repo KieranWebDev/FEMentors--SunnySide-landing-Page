@@ -12,6 +12,7 @@
   --dark-grayish-blue: #818498;
   --grayish-blue: #a7abae;
   --white: #ffffff;
+  --footer: #90d4c6;
 }
 
 /* RESETS */
@@ -365,9 +366,66 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-
   margin: 0 auto;
 }
+/* FOOTER */
+.footer-container {
+  background-color: var(--footer);
+}
+footer {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo img {
+  width: 170px;
+  height: 33px;
+}
+.footer-logo {
+  margin-bottom: 40px;
+}
+.footer-links ul,
+.social-media-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.5rem;
+}
+.footer-links li,
+.social-media-icons li {
+  list-style: none;
+}
+.footer-links a {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.13px;
+  color: var(--dark-moderate-cyan);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+.footer-links {
+  margin-bottom: 5.5rem;
+}
+.social-media-icons ul {
+  justify-content: center;
+  gap: 1.75rem;
+}
+.social-media-icons li a img:hover {
+  /* filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(102deg)
+    brightness(105%) contrast(101%); */
+  filter: brightness(10);
+  transition: all 0.2s ease-in-out;
+}
+
 @media (min-width: 820px) {
   /* HEADER AND NAV */
   .hamburger-btn {
@@ -493,5 +551,25 @@ nav {
   .testimonials-section h3 {
     font-size: 20px;
     margin-bottom: 50px;
+  }
+  /* IMAGES ABOVE FOOTER */
+  .images-above-footer-grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .milk-bottle {
+    background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+  }
+  .orange-on-plate {
+    background-image: url('./images/desktop/image-gallery-orange.jpg');
+  }
+  .cone {
+    background-image: url('./images/desktop/image-gallery-cone.jpg');
+  }
+  .sugar-cubes {
+    background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
+  }
+  .img-above-footer {
+    min-height: 450px;
   }
 }
