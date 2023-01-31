@@ -628,9 +628,12 @@ footer {
   .testimonial img {
     margin-bottom: 58px;
   }
-  /* .testimonial p {
+  .testimonial p {
     margin-bottom: 70px;
-  } */
+  }
+  .testimonial p.job-title {
+    margin-bottom: 0;
+  }
   /* IMAGES ABOVE FOOTER */
   .images-above-footer-grid-container {
     grid-template-columns: repeat(4, 1fr);
