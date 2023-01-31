@@ -1,6 +1,8 @@
-# Frontend Mentor - Sunnyside agency landing page solution
+# Sunnyside agency landing page solution
 
-This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
+
+# you can view the live site [here.](https://kieran-gill-sunny-side-landing-page.vercel.app/)
 
 ## Table of contents
 
@@ -77,7 +79,7 @@ To see how you can add code snippets, see below:
 
 ```js
 const proudOfThisFunc = () => {
-  console.log("🎉");
+  console.log('🎉');
 };
 ```
 
