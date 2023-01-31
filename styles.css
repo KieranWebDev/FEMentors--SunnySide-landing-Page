@@ -594,11 +594,17 @@ footer {
   /* text properties */
   .text-content {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: center; */
     align-items: center;
     padding-right: clamp(1rem, 110px, 130px);
-    padding-left: 3rem;
+    padding-left: clamp(1rem, 165px, 130px);
   }
+
+  .text-content.right {
+    padding-left: clamp(1rem, 110px, 130px);
+    padding-right: clamp(1rem, 165px, 130px);
+  }
+
   .text-layout-container {
     max-width: 445px;
     text-align: left;
