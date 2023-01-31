@@ -10,10 +10,13 @@ menuBtn.addEventListener('click', () => {
 // anchor links open in new tab on desktop and tablet view only (not mobile)
 const links = document.querySelectorAll('a');
 
-links.forEach((link) => {
-  if (window.innerWidth <= 550) {
-    link.setAttribute('target', '_self');
-  } else {
-    link.setAttribute('target', '_blank');
-  }
-});
+function openNewTabForDosktopAndTablet() {
+  links.forEach((link) => {
+    if (window.innerWidth <= 550) {
+      link.setAttribute('target', '_self');
+    } else {
+      link.setAttribute('target', '_blank');
+    }
+  });
+}
+openNewTabForDosktopAndTablet();
