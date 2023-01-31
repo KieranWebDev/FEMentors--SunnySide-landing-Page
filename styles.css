@@ -1,6 +1,6 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
-/* variables */
+/* colors */
 :root {
   --soft-red: #fe7867;
   --yellow: #fad400;
@@ -27,6 +27,7 @@ html {
   margin: 0;
 }
 /* GLOBAL STYLES */
+
 img {
   display: block;
 }
@@ -50,21 +51,20 @@ body {
 }
 
 /* HEADER AND NAV */
+
 nav {
   background-color: cornflowerblue;
   background: transparent;
   padding: 2rem 1.5rem;
   position: absolute;
-  /* position: fixed; */
   width: 100%;
   top: 0;
   background-color: #3dbeff;
   z-index: 5;
   max-width: 1600px;
   margin: 0 auto;
-  /* border: 1px solid black; */
 }
-.max-width-container {
+.nav-max-width-container {
   display: flex;
   justify-content: center;
   background-color: #3dbeff;
@@ -94,7 +94,8 @@ nav {
 .menu ul li {
   list-style: none;
 }
-/* Menu toggle class */
+/* mobile menu toggle classes */
+
 .show-menu {
   display: block;
   margin-top: 50px;
@@ -130,6 +131,7 @@ nav {
   color: var(--very-dark-desaturated-blue);
   border-radius: 28px;
 }
+/* triange in menu corder */
 .show-menu::before {
   content: '';
   position: absolute;
@@ -142,6 +144,7 @@ nav {
   border-bottom: 25px solid white;
 }
 /* HERO */
+
 .hero {
   background-image: url('./images/mobile/image-header.jpg');
   background-size: cover;
@@ -168,12 +171,9 @@ nav {
 }
 
 /* MAIN SECTION */
-/* .grid-container {
-  max-width: 1600px;
-  margin: 0 auto;
-} */
 
 /* main-section images */
+
 .images,
 .text-with-image {
   height: 312px;
@@ -380,6 +380,7 @@ nav {
   margin: 0 auto;
 }
 /* FOOTER */
+
 .footer-container {
   background-color: var(--footer);
 }
@@ -438,8 +439,10 @@ footer {
 }
 
 /* MEDIA QUERIES */
+/* tablet */
 
 @media (min-width: 550px) {
+  /* tablet and mobile images */
   .egg-img {
     background-image: url('./images/desktop/image-transform.jpg');
   }
@@ -487,7 +490,7 @@ footer {
     height: 800px;
   }
 }
-/* mobile */
+/*desktop */
 @media (min-width: 800px) {
   /* HEADER AND NAV */
   .hamburger-btn {
@@ -540,6 +543,7 @@ footer {
     transition: all 0.2s ease-in-out;
   }
   /*HERO  */
+
   .hero {
     background-image: url('./images/desktop/image-header.jpg');
     background-size: cover;
@@ -554,19 +558,6 @@ footer {
   }
 
   /* MAIN SECTION */
-  /* main-section images */
-  .egg-img {
-    background-image: url('./images/desktop/image-transform.jpg');
-  }
-  .glass-img {
-    background-image: url('./images/desktop/image-stand-out.jpg');
-  }
-  .cherry-img {
-    background-image: url('./images/desktop/image-graphic-design.jpg');
-  }
-  .orange-img {
-    background-image: url('./images/desktop/image-photography.jpg');
-  }
 
   /*Grid properties */
   .grid-container {
@@ -614,9 +605,7 @@ footer {
     margin-bottom: 2rem;
     line-height: 49px;
   }
-  /* .text-with-image p {
-    max-width: 340px;
-  } */
+
   /* TESTIMONIALS SECTION */
   .testimonials-section {
     padding: 160px 1.5rem;
@@ -647,18 +636,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
-  .milk-bottle {
-    background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
-  }
-  .orange-on-plate {
-    background-image: url('./images/desktop/image-gallery-orange.jpg');
-  }
-  .cone {
-    background-image: url('./images/desktop/image-gallery-cone.jpg');
-  }
-  .sugar-cubes {
-    background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
-  }
+
   .img-above-footer {
     min-height: 450px;
   }
